@@ -1,0 +1,26 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+
+.header { max-width: var(--line-max); margin-bottom: var(--space-8); }
+.intro { color: var(--color-slate); margin-block: var(--space-4) var(--space-6); }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: var(--line-max);
+  margin-bottom: var(--space-8);
+}
+
+.step { display: flex; gap: var(--space-5); }
+.stepNumber {
+  flex-shrink: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--color-oxblood);
+}
+.step h3 { font-size: var(--text-md); margin-bottom: var(--space-1); }
+.step p { color: var(--color-slate); }
+
+.policySection { max-width: var(--line-max); padding-top: var(--space-6); border-top: var(--border-width) solid var(--color-border); }
+.policySection h2 { font-size: var(--text-lg); margin-bottom: var(--space-3); }
+.policySection p { color: var(--color-slate); }

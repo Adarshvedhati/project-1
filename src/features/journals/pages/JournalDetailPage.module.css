@@ -1,0 +1,26 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+
+.header { max-width: var(--line-max); margin-bottom: var(--space-6); }
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.issn { font-size: var(--text-xs); color: var(--color-slate); }
+.scope { color: var(--color-slate); margin-block: var(--space-3) var(--space-5); }
+
+.ctaRow { display: flex; align-items: center; gap: var(--space-5); }
+
+.secondaryLink {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+.secondaryLink:hover { text-decoration: underline; }
+
+.tabPanel { padding-top: var(--space-6); max-width: 720px; }
+.volumeLabel { font-size: var(--text-sm); color: var(--color-oxblood); font-weight: 600; margin-bottom: var(--space-4); }
+.guidelines { display: flex; flex-direction: column; gap: var(--space-4); color: var(--color-slate); }

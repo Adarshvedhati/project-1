@@ -1,0 +1,3 @@
+.section { padding-block: var(--space-7); }
+.section:not(:last-child) { border-bottom: var(--border-width) solid var(--color-border); }
+.sectionHeader { margin-bottom: var(--space-5); }

@@ -1,0 +1,27 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.cover {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(160deg, var(--color-navy), var(--color-navy-dark));
+  border-radius: var(--radius-md);
+}
+
+.title { margin-block: var(--space-3) var(--space-2); }
+.authors { font-size: var(--text-md); color: var(--color-oxblood); margin-bottom: var(--space-2); }
+.meta { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); color: var(--color-slate); margin-bottom: var(--space-5); }
+.metaDivider { width: 3px; height: 3px; border-radius: 50%; background: var(--color-slate-light); }
+.description { color: var(--color-slate); margin-bottom: var(--space-7); }
+
+.section h2 { font-size: var(--text-lg); margin-bottom: var(--space-4); }
+
+@media (max-width: 700px) {
+  .layout { grid-template-columns: 120px 1fr; }
+}

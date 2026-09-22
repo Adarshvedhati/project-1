@@ -1,0 +1,8 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+.header { max-width: var(--line-max); margin-bottom: var(--space-7); }
+.header h1 { margin-top: var(--space-3); }
+.intro { color: var(--color-slate); margin-top: var(--space-3); }
+
+.faqs { max-width: var(--line-max); display: flex; flex-direction: column; gap: var(--space-6); }
+.faqItem dt { font-weight: 600; font-family: var(--font-serif); font-size: var(--text-md); margin-bottom: var(--space-2); }
+.faqItem dd { color: var(--color-slate); margin: 0; }

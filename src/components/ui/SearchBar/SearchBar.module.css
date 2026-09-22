@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  width: 100%;
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.form:focus-within {
+  border-color: var(--color-navy);
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+.input:focus { outline: none; }
+
+.submit {
+  padding: 0 var(--space-6);
+  background: var(--color-navy);
+  color: var(--color-surface);
+  font-weight: 600;
+  font-size: var(--text-base);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+.submit:hover { background: var(--color-navy-dark); }
+
+.lg .input { padding: var(--space-5) var(--space-6); font-size: var(--text-md); }
+.lg .submit { font-size: var(--text-md); }

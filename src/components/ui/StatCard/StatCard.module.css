@@ -1,0 +1,24 @@
+.card {
+  padding: var(--space-5);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.label {
+  font-size: var(--text-sm);
+  color: var(--color-slate);
+  margin-bottom: var(--space-2);
+}
+
+.value {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  color: var(--color-navy);
+}
+
+.trend {
+  font-size: var(--text-xs);
+  color: var(--color-success);
+  margin-top: var(--space-1);
+}

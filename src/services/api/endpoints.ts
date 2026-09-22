@@ -1,0 +1,28 @@
+/** Centralized REST endpoint paths, matching the SRS module list (section 3). */
+export const ENDPOINTS = {
+  auth: {
+    login: "/auth/login",
+    register: "/auth/register",
+    me: "/auth/me",
+  },
+  search: "/search",
+  journals: "/journals",
+  journal: (id: string) => `/journals/${id}`,
+  articles: "/articles",
+  article: (id: string) => `/articles/${id}`,
+  books: "/books",
+  book: (id: string) => `/books/${id}`,
+  caseStudies: "/case-studies",
+  caseStudy: (id: string) => `/case-studies/${id}`,
+  submissions: "/submissions",
+  submission: (id: string) => `/submissions/${id}`,
+  reviewAssignments: "/review-assignments",
+  editorialDecisions: "/editorial-decisions",
+  institutions: "/institutions",
+  subscriptions: "/subscriptions",
+  bookmarks: "/bookmarks",
+  alerts: "/alerts",
+  users: "/admin/users",
+  auditLogs: "/admin/audit-logs",
+  analytics: "/admin/analytics",
+};

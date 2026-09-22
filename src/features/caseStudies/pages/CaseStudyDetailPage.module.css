@@ -1,0 +1,9 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+.title { max-width: var(--line-max); margin-block: var(--space-3) var(--space-2); }
+.authors { color: var(--color-oxblood); margin-bottom: var(--space-4); }
+.summary { color: var(--color-slate); margin-bottom: var(--space-7); }
+
+.section { max-width: var(--line-max); margin-bottom: var(--space-6); }
+.section h2 { font-size: var(--text-lg); margin-bottom: var(--space-3); }
+.objectives { display: flex; flex-direction: column; gap: var(--space-2); padding-left: var(--space-5); list-style: disc; }
+.note { color: var(--color-slate); }

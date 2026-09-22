@@ -1,0 +1,65 @@
+/**
+ * Design tokens — Academic Publishing & Research Platform
+ * An original editorial identity: deep ink navy, warm paper, oxblood
+ * accent and library-gilt ochre. Deliberately distinct from Emerald's
+ * own green branding — see SRS section 14.
+ */
+:root {
+  /* Color */
+  --color-ink: #1a1f2e;
+  --color-navy: #24345c;
+  --color-navy-dark: #182444;
+  --color-oxblood: #8c3a3a;
+  --color-oxblood-dark: #712d2d;
+  --color-ochre: #b8863b;
+  --color-slate: #5b6472;
+  --color-slate-light: #c9cdd3;
+  --color-paper: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-border: #e4e1d8;
+  --color-border-strong: #cfcabc;
+  --color-success: #3f6b4a;
+  --color-danger: #a33d3d;
+
+  /* Typography */
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.3125rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+  --text-3xl: 3rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Shape */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --border-width: 1px;
+
+  /* Layout */
+  --content-max: 1200px;
+  --line-max: 68ch;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+  color: var(--color-slate);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.description {
+  font-size: var(--text-sm);
+  margin-inline: auto;
+}
+
+.action { margin-top: var(--space-5); }

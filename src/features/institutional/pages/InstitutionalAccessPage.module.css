@@ -1,0 +1,13 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+.header { max-width: var(--line-max); margin-bottom: var(--space-6); }
+.intro { color: var(--color-slate); }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+}
+
+.section { margin-bottom: var(--space-7); }
+.section h2 { font-size: var(--text-lg); margin-bottom: var(--space-4); }
