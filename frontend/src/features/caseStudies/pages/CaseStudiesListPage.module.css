@@ -1,0 +1,16 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+.header { max-width: var(--line-max); margin-bottom: var(--space-6); }
+.intro { color: var(--color-slate); }
+
+.list { display: flex; flex-direction: column; }
+
+.card { padding-block: var(--space-5); border-top: var(--border-width) solid var(--color-border); }
+.card:last-child { border-bottom: var(--border-width) solid var(--color-border); }
+
+.top { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
+.instructorTag { font-size: var(--text-xs); color: var(--color-slate); }
+
+.card h3 { font-size: var(--text-lg); margin-bottom: var(--space-1); }
+.card h3 a:hover { color: var(--color-navy); text-decoration: underline; }
+.authors { font-size: var(--text-sm); color: var(--color-oxblood); margin-bottom: var(--space-2); }
+.summary { color: var(--color-slate); max-width: var(--line-max); }

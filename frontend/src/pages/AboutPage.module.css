@@ -1,0 +1,2 @@
+.page { padding-block: var(--space-6) var(--space-8); max-width: var(--line-max); }
+.page p { color: var(--color-slate); margin-bottom: var(--space-4); }

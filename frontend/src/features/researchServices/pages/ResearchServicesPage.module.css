@@ -1,0 +1,8 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+.header { max-width: var(--line-max); margin-bottom: var(--space-6); }
+.intro { color: var(--color-slate); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-5); }
+.card { padding: var(--space-5); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+.card h3 { font-size: var(--text-md); margin-bottom: var(--space-2); }
+.card p { color: var(--color-slate); font-size: var(--text-sm); }

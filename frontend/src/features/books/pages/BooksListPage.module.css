@@ -1,0 +1,29 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+.header { max-width: var(--line-max); margin-bottom: var(--space-6); }
+.intro { color: var(--color-slate); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-6);
+}
+
+.card {
+  display: flex;
+  gap: var(--space-4);
+  padding-bottom: var(--space-6);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.cover {
+  flex-shrink: 0;
+  width: 72px;
+  height: 100px;
+  background: linear-gradient(160deg, var(--color-navy), var(--color-navy-dark));
+  border-radius: var(--radius-sm);
+}
+
+.title { font-size: var(--text-md); margin-block: var(--space-2) var(--space-1); }
+.title a:hover { color: var(--color-navy); text-decoration: underline; }
+.authors { font-size: var(--text-sm); color: var(--color-oxblood); margin-bottom: var(--space-2); }
+.summary { font-size: var(--text-sm); color: var(--color-slate); }

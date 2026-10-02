@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  justify-content: center;
+  padding-block: var(--space-8);
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-7);
+  background: var(--color-surface);
+}
+
+.subtitle { color: var(--color-slate); font-size: var(--text-sm); margin-block: var(--space-2) var(--space-6); }
+
+.form { display: flex; flex-direction: column; gap: var(--space-4); }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+
+.field { display: flex; flex-direction: column; gap: var(--space-2); font-size: var(--text-sm); font-weight: 600; }
+.field input, .field select {
+  font-weight: 400;
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
+}
+.field input:focus, .field select:focus { outline: none; border-color: var(--color-navy); }
+
+.footer { margin-top: var(--space-6); font-size: var(--text-sm); color: var(--color-slate); text-align: center; }
+.footer a { color: var(--color-navy); font-weight: 600; }
+.footer a:hover { text-decoration: underline; }

@@ -1,0 +1,29 @@
+# Render Blueprint: New + > Blueprint > connect this repo. Creates a web service + Postgres.
+services:
+  - type: web
+    name: meridian
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: meridian-db
+          property: connectionString
+      - key: DJANGO_SECURE_SSL
+        value: "true"
+      - key: SEED_DEMO_DATA
+        value: "true"          # sample catalog; set to "false" once you have real content
+      - key: SEED_DEMO_USERS
+        value: "false"
+      - key: ADMIN_EMAIL
+        sync: false            # you are prompted for these on first deploy
+      - key: ADMIN_PASSWORD
+        sync: false
+
+databases:
+  - name: meridian-db
+    databaseName: meridian
+    user: meridian

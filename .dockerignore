@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+**/__pycache__
+**/*.pyc
+**/.env
+backend/db.sqlite3
+backend/staticfiles
+backend/frontend_dist
+.git
+*.zip

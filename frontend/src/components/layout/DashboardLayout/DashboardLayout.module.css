@@ -1,0 +1,20 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-7);
+  align-items: start;
+  padding-block: var(--space-6);
+}
+
+.content { min-width: 0; padding-bottom: var(--space-8); }
+
+@media (max-width: 800px) {
+  .body { grid-template-columns: 1fr; }
+}

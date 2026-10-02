@@ -1,0 +1,4 @@
+.list { display: flex; flex-direction: column; }
+.item { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding-block: var(--space-4); border-top: var(--border-width) solid var(--color-border); font-size: var(--text-sm); }
+.unread { font-weight: 600; }
+.date { color: var(--color-slate); font-size: var(--text-xs); white-space: nowrap; }

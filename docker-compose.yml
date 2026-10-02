@@ -1,0 +1,35 @@
+# One command, full stack:  docker compose up --build   ->  http://localhost:8000
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: meridian
+      POSTGRES_USER: meridian
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-meridian}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U meridian -d meridian"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgres://meridian:${POSTGRES_PASSWORD:-meridian}@db:5432/meridian
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-insecure-local-compose-key-change-me}
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS:-localhost,127.0.0.1}
+
+volumes:
+  pgdata:

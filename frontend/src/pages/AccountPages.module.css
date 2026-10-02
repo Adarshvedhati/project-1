@@ -1,0 +1,16 @@
+.page { padding-block: var(--space-6) var(--space-8); }
+
+.list { display: flex; flex-direction: column; margin-top: var(--space-5); }
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+  border-top: var(--border-width) solid var(--color-border);
+  font-size: var(--text-sm);
+}
+.item a { font-weight: 600; }
+.item a:hover { color: var(--color-navy); text-decoration: underline; }
+.savedAt { font-size: var(--text-xs); color: var(--color-slate); }
+
+.body { margin-top: var(--space-5); max-width: var(--line-max); }

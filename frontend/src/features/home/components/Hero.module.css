@@ -1,0 +1,30 @@
+.hero {
+  background: var(--color-surface);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.inner {
+  padding-block: var(--space-8) var(--space-7);
+  max-width: 800px;
+}
+
+.kicker {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-oxblood);
+  margin-bottom: var(--space-4);
+}
+
+.headline {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.subhead {
+  color: var(--color-slate);
+  font-size: var(--text-md);
+  margin-bottom: var(--space-6);
+  max-width: 60ch;
+}
+
+.searchWrap { max-width: 640px; }

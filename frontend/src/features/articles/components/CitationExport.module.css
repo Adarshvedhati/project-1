@@ -1,0 +1,17 @@
+.box {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  background: var(--color-surface);
+}
+.label { font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-2); }
+.citation { font-size: var(--text-sm); color: var(--color-slate); margin-bottom: var(--space-3); line-height: var(--leading-relaxed); }
+.copyButton {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-navy);
+  border: var(--border-width) solid var(--color-navy);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4);
+}
+.copyButton:hover { background: var(--color-navy); color: var(--color-surface); }

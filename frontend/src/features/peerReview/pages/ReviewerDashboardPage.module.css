@@ -1,0 +1,8 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-4);
+  margin-block: var(--space-5) var(--space-7);
+}
+
+.list { display: flex; flex-direction: column; gap: var(--space-4); }

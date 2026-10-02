@@ -1,0 +1,5 @@
+.page { padding-block: var(--space-9); text-align: center; }
+.code { font-family: var(--font-serif); font-size: var(--text-3xl); color: var(--color-slate-light); }
+.body { color: var(--color-slate); margin-block: var(--space-3) var(--space-5); }
+.link { font-weight: 600; color: var(--color-navy); }
+.link:hover { text-decoration: underline; }
